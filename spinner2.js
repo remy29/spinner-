@@ -1,6 +1,6 @@
 const spinner = function(loops, timeOut) {
-  const states = ['\r|   ', '\r/   ', '\r-   ', '\r\\   ', '\r|   ']
-  for (i = 0; i < loops; i++) {
+  const states = ['\r|   ', '\r/   ', '\r-   ', '\r\\   ', '\r|   '];
+  for (let i = 0; i < loops; i++) {
     for (const state of states) {
       setTimeout(() => {
         process.stdout.write(state);
